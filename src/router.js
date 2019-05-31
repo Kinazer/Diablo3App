@@ -1,6 +1,11 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
+import News from "./views/News.vue";
+import WD from "./views/WD.vue";
+import Extra from "./views/Extra.vue";
+import Chat from "./views/Chat.vue";
+import Armory from "./views/Armory.vue";
+import Ladder from "./views/Ladder.vue";
 
 Vue.use(Router);
 
@@ -9,9 +14,34 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
+      path: "/armory",
+      name: "armory",
+      component: Armory
+    },
+    {
+      path: "/ladder",
+      name: "ladder",
+      component: Ladder
+    },
+    {
       path: "/",
-      name: "home",
-      component: Home
+      name: "news",
+      component: News
+    },
+    {
+      path: "/chat",
+      name: "chat",
+      component: Chat
+    },
+    {
+      path: "/extra",
+      name: "extra",
+      component: Extra
+    },
+    {
+      path: "/wd",
+      name: "wd",
+      component: WD
     },
     {
       path: "/about",

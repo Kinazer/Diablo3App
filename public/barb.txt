@@ -1,0 +1,431 @@
+{
+  "name": "Barbarian",
+  "icon": "barbarian_male",
+  "skillCategories": [
+    {
+      "name": "Primary",
+	"skills": [
+	
+	]
+    },
+    {
+      "name": "Secondary"
+    },
+    {
+      "name": "Defensive"
+    },
+    {
+      "name": "Might"
+    },
+    {
+      "name": "Tactics"
+    },
+    {
+      "name": "Rage"
+    }
+  ],
+  "skills": {
+    "active": [
+      {
+        "slug": "bash",
+        "name": "Bash",
+        "icon": "barbarian_bash",
+        "level": 1,
+        "tooltipUrl": "/class/barbarian/active/bash",
+        "description": "Generate: 6 Fury per attack\n\nBrutally smash an enemy for 320% weapon damage.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Generate:</span> <span class=\"d3-color-green\">6</span> Fury per attack</p>\n\n<p>Brutally smash an enemy for <span class=\"d3-color-green\">320%</span> weapon damage.</p>"
+      },
+      {
+        "slug": "hammer-of-the-ancients",
+        "name": "Hammer of the Ancients",
+        "icon": "barbarian_hammeroftheancients",
+        "level": 2,
+        "tooltipUrl": "/class/barbarian/active/hammer-of-the-ancients",
+        "description": "Cost: 20 Fury\n\nCall forth a massive hammer to smash enemies directly in front of you for 535% weapon damage. Hammer of the Ancients has a 1% increased Critical Hit Chance for every 5 Fury that you have.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Cost:</span> <span class=\"d3-color-green\">20</span> Fury</p>\n\n<p>Call forth a massive hammer to smash enemies directly in front of you for <span class=\"d3-color-green\">535%</span> weapon damage. Hammer of the Ancients has a <span class=\"d3-color-green\">1%</span> increased Critical Hit Chance for every <span class=\"d3-color-green\">5</span> Fury that you have.</p>"
+      },
+      {
+        "slug": "cleave",
+        "name": "Cleave",
+        "icon": "barbarian_cleave",
+        "level": 3,
+        "tooltipUrl": "/class/barbarian/active/cleave",
+        "description": "Generate: 6 Fury per attack\n\nSwing your weapon in a wide arc to deal 200% weapon damage to all enemies caught in the swing.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Generate:</span> <span class=\"d3-color-green\">6</span> Fury per attack</p>\n\n<p>Swing your weapon in a wide arc to deal <span class=\"d3-color-green\">200%</span> weapon damage to all enemies caught in the swing.</p>"
+      },
+      {
+        "slug": "ground-stomp",
+        "name": "Ground Stomp",
+        "icon": "barbarian_groundstomp",
+        "level": 4,
+        "tooltipUrl": "/class/barbarian/active/ground-stomp",
+        "description": "Generate: 15 Fury\nCooldown: 12 seconds\n\nSmash the ground, stunning all enemies within 14 yards for 4 seconds.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Generate:</span> <span class=\"d3-color-green\">15</span> Fury</p>\n<p><span class=\"d3-color-gold\">Cooldown:</span> <span class=\"d3-color-green\">12</span> seconds</p>\n\n<p>Smash the ground, stunning all enemies within <span class=\"d3-color-green\">14</span> yards for <span class=\"d3-color-green\">4</span> seconds.</p>"
+      },
+      {
+        "slug": "rend",
+        "name": "Rend",
+        "icon": "barbarian_rend",
+        "level": 5,
+        "tooltipUrl": "/class/barbarian/active/rend",
+        "description": "Cost: 20 Fury\n\nA sweeping strike causes all enemies within 12 yards to Bleed for 1100% weapon damage as Physical over 5 seconds.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Cost:</span> <span class=\"d3-color-green\">20</span> Fury</p>\n\n<p>A sweeping strike causes all enemies within <span class=\"d3-color-green\">12</span> yards to Bleed for <span class=\"d3-color-green\">1100%</span> weapon damage as Physical over <span class=\"d3-color-green\">5</span> seconds.</p>"
+      },
+      {
+        "slug": "leap",
+        "name": "Leap",
+        "icon": "barbarian_leap",
+        "level": 8,
+        "tooltipUrl": "/class/barbarian/active/leap",
+        "description": "Generate: 15 Fury\nCooldown: 10 seconds\n\nLeap into the air, dealing 180% weapon damage to all enemies within 10 yards of your destination and slowing their movement speed by 60% for 3 seconds.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Generate:</span> <span class=\"d3-color-green\">15</span> Fury</p>\n<p><span class=\"d3-color-gold\">Cooldown:</span> <span class=\"d3-color-green\">10</span> seconds</p>\n\n<p>Leap into the air, dealing <span class=\"d3-color-green\">180%</span> weapon damage to all enemies within <span class=\"d3-color-green\">10</span> yards of your destination and slowing their movement speed by <span class=\"d3-color-green\">60%</span> for <span class=\"d3-color-green\">3</span> seconds.</p>"
+      },
+      {
+        "slug": "overpower",
+        "name": "Overpower",
+        "icon": "barbarian_overpower",
+        "level": 9,
+        "tooltipUrl": "/class/barbarian/active/overpower",
+        "description": "Cooldown: 12 seconds\n\nDeal 380% weapon damage to all enemies within 9 yards.\n\nCritical Hits have a chance to reduce the cooldown of Overpower by 1 second.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Cooldown:</span> <span class=\"d3-color-green\">12</span> seconds</p>\n\n<p>Deal <span class=\"d3-color-green\">380%</span> weapon damage to all enemies within <span class=\"d3-color-green\">9</span> yards.</p>\n\n<p><span class=\"d3-color-yellow\">Critical Hits have a chance to reduce the cooldown of Overpower by <span class=\"d3-color-green\">1</span> second.</span></p>"
+      },
+      {
+        "slug": "frenzy",
+        "name": "Frenzy",
+        "icon": "barbarian_frenzy",
+        "level": 11,
+        "tooltipUrl": "/class/barbarian/active/frenzy",
+        "description": "Generate: 4 Fury per attack\n\nSwing for 220% weapon damage. Frenzy's attack speed increases by 15% for 4 seconds with each swing. This effect stacks up to 5 times.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Generate:</span> <span class=\"d3-color-green\">4</span> Fury per attack</p>\n\n<p>Swing for <span class=\"d3-color-green\">220%</span> weapon damage. Frenzy's attack speed increases by <span class=\"d3-color-green\">15%</span> for <span class=\"d3-color-green\">4</span> seconds with each swing. This effect stacks up to <span class=\"d3-color-green\">5</span> times.</p>"
+      },
+      {
+        "slug": "seismic-slam",
+        "name": "Seismic Slam",
+        "icon": "barbarian_seismicslam",
+        "level": 12,
+        "tooltipUrl": "/class/barbarian/active/seismic-slam",
+        "description": "Cost: 30 Fury\n\nSlam the ground and cause a wave of destruction that deals 620% weapon damage to enemies up to 50 yards in front of you.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Cost:</span> <span class=\"d3-color-green\">30</span> Fury</p>\n\n<p>Slam the ground and cause a wave of destruction that deals <span class=\"d3-color-green\">620%</span> weapon damage to enemies up to <span class=\"d3-color-green\">50</span> yards in front of you.</p>"
+      },
+      {
+        "slug": "revenge",
+        "name": "Revenge",
+        "icon": "barbarian_revenge",
+        "level": 13,
+        "tooltipUrl": "/class/barbarian/active/revenge",
+        "description": "Cost: 1 charge\n\nDeal 300% weapon damage to all nearby enemies. You heal 4% of your maximum Life for each enemy hit.\n\nRevenge has a 15% chance to gain a charge each time you are hit. Maximum 2 charges.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Cost: </span><span class=\"d3-color-green\">1</span> charge</p>\n\n<p>Deal <span class=\"d3-color-green\">300%</span> weapon damage to all nearby enemies. You heal <span class=\"d3-color-green\">4%</span> of your maximum Life for each enemy hit.</p>\n\n<p><span class=\"d3-color-yellow\">Revenge has a </span><span class=\"d3-color-green\">15%</span> <span class=\"d3-color-yellow\">chance to gain a charge each time you are hit. Maximum <span class=\"d3-color-green\">2</span> charges.</span></p>"
+      },
+      {
+        "slug": "threatening-shout",
+        "name": "Threatening Shout",
+        "icon": "barbarian_threateningshout",
+        "level": 14,
+        "tooltipUrl": "/class/barbarian/active/threatening-shout",
+        "description": "Generate: 15 Fury\nCooldown: 10 seconds\n\nShout with great ferocity, reducing damage done by enemies within 25 yards by 20% for 15 seconds.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Generate:</span> <span class=\"d3-color-green\">15</span> Fury</p>\n<p><span class=\"d3-color-gold\">Cooldown:</span> <span class=\"d3-color-green\">10</span> seconds</p>\n\n<p>Shout with great ferocity, reducing damage done by enemies within <span class=\"d3-color-green\">25</span> yards by <span class=\"d3-color-green\">20%</span> for <span class=\"d3-color-green\">15</span> seconds.</p>"
+      },
+      {
+        "slug": "sprint",
+        "name": "Sprint",
+        "icon": "barbarian_sprint",
+        "level": 16,
+        "tooltipUrl": "/class/barbarian/active/sprint",
+        "description": "Cost: 20 Fury\n\nIncrease movement speed by 30% for 3 seconds.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Cost:</span> <span class=\"d3-color-green\">20</span> Fury</p>\n\n<p>Increase movement speed by <span class=\"d3-color-green\">30%</span> for <span class=\"d3-color-green\">3</span> seconds.</p>"
+      },
+      {
+        "slug": "weapon-throw",
+        "name": "Weapon Throw",
+        "icon": "x1_barbarian_weaponthrow",
+        "level": 17,
+        "tooltipUrl": "/class/barbarian/active/weapon-throw",
+        "description": "Generate: 6 Fury per attack\n\nHurl a throwing weapon at an enemy dealing 275% weapon damage.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Generate:</span> <span class=\"d3-color-green\">6</span> Fury per attack</p>\n\n<p>Hurl a throwing weapon at an enemy dealing <span class=\"d3-color-green\">275%</span> weapon damage.</p>"
+      },
+      {
+        "slug": "earthquake",
+        "name": "Earthquake",
+        "icon": "barbarian_earthquake",
+        "level": 19,
+        "tooltipUrl": "/class/barbarian/active/earthquake",
+        "description": "Cost: 25 Fury\nCooldown: 60 seconds\n\nShake the ground violently, dealing 4800% weapon damage as Fire over 8 seconds to all enemies within 18 yards.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Cost:</span> <span class=\"d3-color-green\">25</span> Fury</p>\n<p><span class=\"d3-color-gold\">Cooldown:</span> <span class=\"d3-color-green\">60</span> seconds</p>\n\n<p>Shake the ground violently, dealing <span class=\"d3-color-green\">4800%</span> weapon damage as Fire over <span class=\"d3-color-green\">8</span> seconds to all enemies within <span class=\"d3-color-green\">18</span> yards.</p>"
+      },
+      {
+        "slug": "whirlwind",
+        "name": "Whirlwind",
+        "icon": "barbarian_whirlwind",
+        "level": 20,
+        "tooltipUrl": "/class/barbarian/active/whirlwind",
+        "description": "Cost: 10 Fury\n\nDeliver multiple attacks to everything in your path for 340% weapon damage.\n\nWhile whirlwinding, you move at 100% movement speed.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Cost:</span> <span class=\"d3-color-green\">10</span> Fury</p>\n\n<p>Deliver multiple attacks to everything in your path for <span class=\"d3-color-green\">340%</span> weapon damage.</p>\n\n<p>While whirlwinding, you move at <span class=\"d3-color-green\">100%</span> movement speed.</p>"
+      },
+      {
+        "slug": "furious-charge",
+        "name": "Furious Charge",
+        "icon": "barbarian_furiouscharge",
+        "level": 21,
+        "tooltipUrl": "/class/barbarian/active/furious-charge",
+        "description": "Cost: 1 Charge\nGenerate: 15 Fury\n\nRush forward knocking back and dealing 600% weapon damage to enemies along your path.\n\nYou gain a charge every 10 seconds and can have up to 1 charge stored at a time.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Cost:</span> <span class=\"d3-color-green\">1</span> Charge</p>\n<p><span class=\"d3-color-gold\">Generate:</span> <span class=\"d3-color-green\">15</span> Fury</p>\n\n<p>Rush forward knocking back and dealing <span class=\"d3-color-green\">600%</span> weapon damage to enemies along your path.</p>\n\n<p><span class=\"d3-color-yellow\">You gain a charge every <span class=\"d3-color-green\">10</span> seconds and can have up to <span class=\"d3-color-green\">1</span> charge stored at a time.</span></p>"
+      },
+      {
+        "slug": "ignore-pain",
+        "name": "Ignore Pain",
+        "icon": "barbarian_ignorepain",
+        "level": 22,
+        "tooltipUrl": "/class/barbarian/active/ignore-pain",
+        "description": "Cooldown: 30 seconds\n\nReduce all damage taken by 50% and gain Immunity to all control-impairing effects for 5 seconds.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Cooldown:</span> <span class=\"d3-color-green\">30</span> seconds</p>\n\n<p>Reduce all damage taken by <span class=\"d3-color-green\">50%</span> and gain <span class=\"d3-color-green\">Immunity</span> to all control-impairing effects for <span class=\"d3-color-green\">5</span> seconds.</p>"
+      },
+      {
+        "slug": "battle-rage",
+        "name": "Battle Rage",
+        "icon": "barbarian_battlerage",
+        "level": 22,
+        "tooltipUrl": "/class/barbarian/active/battle-rage",
+        "description": "Cost: 20 Fury\n\nEnter a rage which increases your damage by 10% and Critical Hit Chance by 3%. Lasts 120 seconds.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Cost:</span> <span class=\"d3-color-green\">20</span> Fury</p>\n\n<p>Enter a rage which increases your damage by <span class=\"d3-color-green\">10%</span> and Critical Hit Chance by <span class=\"d3-color-green\">3%</span>. Lasts <span class=\"d3-color-green\">120</span> seconds.</p>"
+      },
+      {
+        "slug": "call-of-the-ancients",
+        "name": "Call of the Ancients",
+        "icon": "barbarian_calloftheancients",
+        "level": 25,
+        "tooltipUrl": "/class/barbarian/active/call-of-the-ancients",
+        "description": "Cooldown: 120 seconds\n\nSummon the ancient Barbarians Talic, Korlic, and Madawc to fight alongside you for 20 seconds. Each deals 270% weapon damage per swing in addition to bonus abilities.\n\n\n Talic wields a sword and shield and uses Whirlwind and Leap.\n Korlic wields a massive polearm and uses Cleave and Furious Charge.\n Madawc dual-wields axes and uses Weapon Throw and Seismic Slam.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Cooldown:</span> <span class=\"d3-color-green\">120</span> seconds</p>\n\n<p>Summon the ancient Barbarians Talic, Korlic, and Madawc to fight alongside you for <span class=\"d3-color-green\">20</span> seconds. Each deals <span class=\"d3-color-green\">270%</span> weapon damage per swing in addition to bonus abilities.</p>\n\n<p><span class=\"tooltip-icon-bullet\"></span> Talic wields a sword and shield and uses Whirlwind and Leap.<br></br><span class=\"tooltip-icon-bullet\"></span> Korlic wields a massive polearm and uses Cleave and Furious Charge.<br></br><span class=\"tooltip-icon-bullet\"></span> Madawc dual-wields axes and uses Weapon Throw and Seismic Slam.</p>"
+      },
+      {
+        "slug": "ancient-spear",
+        "name": "Ancient Spear",
+        "icon": "x1_barbarian_ancientspear",
+        "level": 26,
+        "tooltipUrl": "/class/barbarian/active/ancient-spear",
+        "description": "Cost: 25 Fury\n\nThrow a spear that pierces enemies and deals 500% weapon damage.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Cost:</span> <span class=\"d3-color-green\">25</span> Fury</p>\n\n<p>Throw a spear that pierces enemies and deals <span class=\"d3-color-green\">500%</span> weapon damage.</p>"
+      },
+      {
+        "slug": "war-cry",
+        "name": "War Cry",
+        "icon": "x1_barbarian_warcry_v2",
+        "level": 28,
+        "tooltipUrl": "/class/barbarian/active/war-cry",
+        "description": "Generate: 20 Fury\nCooldown: 20 seconds\n\nUnleash a rallying cry to increase Armor for you and all allies within 100 yards by 20% for 120 seconds.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Generate:</span> <span class=\"d3-color-green\">20</span> Fury</p>\n<p><span class=\"d3-color-gold\">Cooldown:</span> <span class=\"d3-color-green\">20</span> seconds</p>\n\n<p>Unleash a rallying cry to increase Armor for you and all allies within <span class=\"d3-color-green\">100</span> yards by <span class=\"d3-color-green\">20%</span> for <span class=\"d3-color-green\">120</span> seconds.</p>"
+      },
+      {
+        "slug": "wrath-of-the-berserker",
+        "name": "Wrath of the Berserker",
+        "icon": "barbarian_wrathoftheberserker",
+        "level": 30,
+        "tooltipUrl": "/class/barbarian/active/wrath-of-the-berserker",
+        "description": "Cooldown: 120 seconds\n\nEnter a berserker rage which raises several attributes for 20 seconds.\n\n\n Critical Hit Chance: 10%\n Attack Speed: 25%\n Dodge Chance: 20%\n Movement Speed: 20%",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Cooldown:</span> <span class=\"d3-color-green\">120</span> seconds</p>\n\n<p>Enter a berserker rage which raises several attributes for <span class=\"d3-color-green\">20</span> seconds.</p>\n\n<p><span class=\"tooltip-icon-bullet\"></span> Critical Hit Chance: <span class=\"d3-color-green\">10%</span><br></br><span class=\"tooltip-icon-bullet\"></span> Attack Speed: <span class=\"d3-color-green\">25%</span><br></br><span class=\"tooltip-icon-bullet\"></span> Dodge Chance: <span class=\"d3-color-green\">20%</span><br></br><span class=\"tooltip-icon-bullet\"></span> Movement Speed: <span class=\"d3-color-green\">20%</span></p>"
+      },
+      {
+        "slug": "avalanche",
+        "name": "Avalanche",
+        "icon": "x1_barbarian_avalanche_v2",
+        "level": 61,
+        "tooltipUrl": "/class/barbarian/active/avalanche",
+        "description": "Cooldown: 30 seconds\n\nCause a massive avalanche of rocks to fall on an area dealing 2400% weapon damage to all enemies caught in its path.\n\nCooldown is reduced by 1 second for every 25 Fury you spend.",
+        "descriptionHtml": "<p><span class=\"d3-color-gold\">Cooldown:</span> <span class=\"d3-color-green\">30</span> seconds</p>\n\n<p>Cause a massive avalanche of rocks to fall on an area dealing <span class=\"d3-color-green\">2400%</span> weapon damage to all enemies caught in its path.</p>\n\n<p><span class=\"d3-color-yellow\">Cooldown is reduced by <span class=\"d3-color-green\">1</span> second for every <span class=\"d3-color-green\">25</span> Fury you spend.</span></p>"
+      }
+    ],
+    "passive": [
+      {
+        "slug": "pound-of-flesh",
+        "name": "Pound of Flesh",
+        "icon": "barbarian_passive_poundofflesh",
+        "level": 10,
+        "tooltipUrl": "/class/barbarian/passive/pound-of-flesh",
+        "description": "When you are healed by a health globe, gain 2% Life regeneration per second and 4% increased movement speed for 15 seconds. This bonus stacks up to 5 times.",
+        "descriptionHtml": "<p>When you are healed by a health globe, gain <span class=\"d3-color-green\">2%</span> Life regeneration per second and <span class=\"d3-color-green\">4%</span> increased movement speed for <span class=\"d3-color-green\">15</span> seconds. This bonus stacks up to <span class=\"d3-color-green\">5</span> times.</p>",
+        "flavorText": "\"When the sky bleeds, the crops grow tall. When our enemies bleed, we grow strong.\" �Chant of the Harvest"
+      },
+      {
+        "slug": "ruthless",
+        "name": "Ruthless",
+        "icon": "barbarian_passive_ruthless",
+        "level": 10,
+        "tooltipUrl": "/class/barbarian/passive/ruthless",
+        "description": "You deal 40% additional damage to enemies below 30% health.",
+        "descriptionHtml": "<p>You deal <span class=\"d3-color-green\">40%</span> additional damage to enemies below <span class=\"d3-color-green\">30%</span> health.</p>",
+        "flavorText": "The clans each paint their warriors in their own unique way. Some celebrate the mountain, others honor the fire, but the Targos clan worships the purifying virtue of pain."
+      },
+      {
+        "slug": "nerves-of-steel",
+        "name": "Nerves of Steel",
+        "icon": "barbarian_passive_nervesofsteel",
+        "level": 13,
+        "tooltipUrl": "/class/barbarian/passive/nerves-of-steel",
+        "description": "Fatal damage instead reduces you to 15% Life. For 3 seconds afterward, you take 95% reduced damage and are immune to all control-impairing effects.\n\nThis effect may occur once every 60 seconds.",
+        "descriptionHtml": "<p>Fatal damage instead reduces you to <span class=\"d3-color-green\">15%</span> Life. For <span class=\"d3-color-green\">3</span> seconds afterward, you take <span class=\"d3-color-green\">95%</span> reduced damage and are immune to all control-impairing effects.</p>\n\n<p>This effect may occur once every <span class=\"d3-color-green\">60</span> seconds.</p>",
+        "flavorText": "\"The trials begin with childhood; skinning ferocious beasts, climbing windswept cliffs and carrying weapons heavy enough to make a southern soldier weep. Is it any wonder that they never give ground?\" �Sir Aric of Duncraig"
+      },
+      {
+        "slug": "weapons-master",
+        "name": "Weapons Master",
+        "icon": "barbarian_passive_weaponsmaster",
+        "level": 16,
+        "tooltipUrl": "/class/barbarian/passive/weapons-master",
+        "description": "Gain a bonus based on the weapon type of your main hand weapon:\nSwords/Daggers: 8% increased damage\nMaces/Axes: 5% Critical Hit Chance\nPolearms/Spears: 8% attack speed\nMighty Weapons: 2 Fury per hit",
+        "descriptionHtml": "<p>Gain a bonus based on the weapon type of your main hand weapon:</p>\n<p>Swords/Daggers: <span class=\"d3-color-green\">8%</span> increased damage</p>\n<p>Maces/Axes: <span class=\"d3-color-green\">5%</span> Critical Hit Chance</p>\n<p>Polearms/Spears: <span class=\"d3-color-green\">8%</span> attack speed</p>\n<p>Mighty Weapons: <span class=\"d3-color-green\">2</span> Fury per hit</p>",
+        "flavorText": "\"My men ambushed the traveler in the woods, but it was we who were surprised. Such keen senses, swift motions, flawless strikes. We never stood a chance.\" �Redjack the Bandit"
+      },
+      {
+        "slug": "inspiring-presence",
+        "name": "Inspiring Presence",
+        "icon": "barbarian_passive_inspiringpresence",
+        "level": 20,
+        "tooltipUrl": "/class/barbarian/passive/inspiring-presence",
+        "description": "The duration of your shouts is doubled. After using a shout you and all allies within 100 yards regenerate 3% of maximum Life per second for 120 seconds.\n\nYour shouts are:\n Battle Rage\n Threatening Shout\n War Cry",
+        "descriptionHtml": "<p>The duration of your shouts is doubled. After using a shout you and all allies within <span class=\"d3-color-green\">100</span> yards regenerate <span class=\"d3-color-green\">3%</span> of maximum Life per second for <span class=\"d3-color-green\">120</span> seconds.</p>\n\n<p>Your shouts are:<br></br><span class=\"tooltip-icon-bullet\"></span> Battle Rage<br></br><span class=\"tooltip-icon-bullet\"></span> Threatening Shout<br></br><span class=\"tooltip-icon-bullet\"></span> War Cry</p>",
+        "flavorText": "\"The enemy poured through the gap until Warmaster Karja impaled three demons at once on our battle standard, tossing their corpses into the fray below as she roared a rallying call from high atop the battlements.\" �The Battle of the Starless Night"
+      },
+      {
+        "slug": "berserker-rage",
+        "name": "Berserker Rage",
+        "icon": "barbarian_passive_berserkerrage",
+        "level": 20,
+        "tooltipUrl": "/class/barbarian/passive/berserker-rage",
+        "description": "You deal 25% additional damage while near maximum Fury.",
+        "descriptionHtml": "<p>You deal <span class=\"d3-color-green\">25%</span> additional damage while near maximum Fury.</p>",
+        "flavorText": "\"You wouldn't like me when I'm angry.\" �Bannar the Berserker"
+      },
+      {
+        "slug": "bloodthirst",
+        "name": "Bloodthirst",
+        "icon": "barbarian_passive_bloodthirst",
+        "level": 24,
+        "tooltipUrl": "/class/barbarian/passive/bloodthirst",
+        "description": "Each point of Fury spent heals you for 966 Life.\n\nHeal amount is increased by 1% of your Health Globe Healing Bonus.",
+        "descriptionHtml": "<p>Each point of Fury spent heals you for <span class=\"d3-color-green\">966</span> Life.</p>\n\n<p>Heal amount is increased by <span class=\"d3-color-green\">1%</span> of your Health Globe Healing Bonus.</p>",
+        "flavorText": "\"Compassion is weakness. To press the advantage when an opponent calls for mercy is the way of true power.\" �Halaberd the Conqueror"
+      },
+      {
+        "slug": "animosity",
+        "name": "Animosity",
+        "icon": "barbarian_passive_animosity",
+        "level": 27,
+        "tooltipUrl": "/class/barbarian/passive/animosity",
+        "description": "Increase all Fury generation by 10%.\nIncrease maximum Fury by 20.\n\nFury is used to fuel your most powerful attacks.",
+        "descriptionHtml": "<p>Increase all Fury generation by <span class=\"d3-color-green\">10%</span>.</p>\n<p>Increase maximum Fury by <span class=\"d3-color-green\">20</span>.</p>\n\n<p>Fury is used to fuel your most powerful attacks.</p>",
+        "flavorText": "\"While most orders teach the merits of calming the seas of the soul, the guardians of Arreat have embraced the raging inner storm.\" �Chronicler Arlavoc"
+      },
+      {
+        "slug": "superstition",
+        "name": "Superstition",
+        "icon": "barbarian_passive_superstition",
+        "level": 30,
+        "tooltipUrl": "/class/barbarian/passive/superstition",
+        "description": "Reduce all non-Physical damage by 20%. When you take damage from a ranged or elemental attack, you have a chance to gain 2 Fury.",
+        "descriptionHtml": "<p>Reduce all non-Physical damage by <span class=\"d3-color-green\">20%</span>. When you take damage from a ranged or elemental attack, you have a chance to gain <span class=\"d3-color-green\">2</span> Fury.</p>",
+        "flavorText": "\"The sorcery of the west has brought us nothing but blight. Strength built these walls, and strength will hold them.\" �Gruchac Hammerhand"
+      },
+      {
+        "slug": "tough-as-nails",
+        "name": "Tough as Nails",
+        "icon": "barbarian_passive_toughasnails",
+        "level": 30,
+        "tooltipUrl": "/class/barbarian/passive/tough-as-nails",
+        "description": "Increase Armor by 25%.\nIncrease Thorns by 100%.",
+        "descriptionHtml": "<p>Increase Armor by <span class=\"d3-color-green\">25%</span>.</p>\n<p>Increase Thorns by <span class=\"d3-color-green\">100%</span>.</p>",
+        "flavorText": "After a while the scars serve as their own layer of armor."
+      },
+      {
+        "slug": "no-escape",
+        "name": "No Escape",
+        "icon": "barbarian_passive_noescape",
+        "level": 35,
+        "tooltipUrl": "/class/barbarian/passive/no-escape",
+        "description": "Increase the damage of Weapon Throw, Seismic Slam, Ancient Spear, and Avalanche by 30% against enemies more than 15 yards away from you.",
+        "descriptionHtml": "<p>Increase the damage of Weapon Throw, Seismic Slam, Ancient Spear, and Avalanche by <span class=\"d3-color-green\">30%</span> against enemies more than <span class=\"d3-color-green\">15</span> yards away from you.</p>",
+        "flavorText": "\"Run if you must, but you'll only die tired.\" �Ooron Goons"
+      },
+      {
+        "slug": "relentless",
+        "name": "Relentless",
+        "icon": "barbarian_passive_relentless",
+        "level": 40,
+        "tooltipUrl": "/class/barbarian/passive/relentless",
+        "description": "While below 35% Life, all skills cost 50% less Fury, Life per Fury Spent is doubled, and all damage taken is reduced by 50%.",
+        "descriptionHtml": "<p>While below <span class=\"d3-color-green\">35%</span> Life, all skills cost <span class=\"d3-color-green\">50%</span> less Fury, Life per Fury Spent is doubled, and all damage taken is reduced by <span class=\"d3-color-green\">50%</span>.</p>",
+        "flavorText": "No matter the odds, some warriors simply refuse to fall."
+      },
+      {
+        "slug": "brawler",
+        "name": "Brawler",
+        "icon": "barbarian_passive_brawler",
+        "level": 45,
+        "tooltipUrl": "/class/barbarian/passive/brawler",
+        "description": "As long as there are 3 enemies within 12 yards, all of your damage is increased by 20%.",
+        "descriptionHtml": "<p>As long as there are <span class=\"d3-color-green\">3</span> enemies within <span class=\"d3-color-green\">12</span> yards, all of your damage is increased by <span class=\"d3-color-green\">20%</span>.</p>",
+        "flavorText": "\"I have two blades, one for each of you.\" �Blademaster Kharne"
+      },
+      {
+        "slug": "juggernaut",
+        "name": "Juggernaut",
+        "icon": "barbarian_passive_juggernaut",
+        "level": 50,
+        "tooltipUrl": "/class/barbarian/passive/juggernaut",
+        "description": "The duration of control-impairing effects on you are reduced by 50%. In addition, whenever a Stun, Freeze, Fear, or Immobilize is cast on you, you have a chance to recover 20% of your maximum Life.",
+        "descriptionHtml": "<p>The duration of control-impairing effects on you are reduced by <span class=\"d3-color-green\">50%</span>. In addition, whenever a Stun, Freeze, Fear, or Immobilize is cast on you, you have a chance to recover <span class=\"d3-color-green\">20%</span> of your maximum Life.</p>",
+        "flavorText": "\"I swear to you, we put a dozen arrows into him and he just stood back up. These so-called barbarians, these madmen of the north�there is no stopping them.\" �Soldier of Bastion's Keep"
+      },
+      {
+        "slug": "unforgiving",
+        "name": "Unforgiving",
+        "icon": "barbarian_passive_unforgiving",
+        "level": 55,
+        "tooltipUrl": "/class/barbarian/passive/unforgiving",
+        "description": "You no longer degenerate Fury. Instead, you generate 2 Fury every 1 second.",
+        "descriptionHtml": "<p>You no longer degenerate Fury. Instead, you generate <span class=\"d3-color-green\">2</span> Fury every <span class=\"d3-color-green\">1</span> second.</p>",
+        "flavorText": "\"It was as if he suddenly came to know every grievous injury endured by his ancestors, and he had selected that very moment to exact their collective revenge.\" �Chronicler Arlavoc"
+      },
+      {
+        "slug": "boon-of-bulkathos",
+        "name": "Boon of Bul-Kathos",
+        "icon": "barbarian_passive_boonofbulkathos",
+        "level": 60,
+        "tooltipUrl": "/class/barbarian/passive/boon-of-bulkathos",
+        "description": "Reduce the cooldowns of your:\n Earthquake by 15 seconds.\n Call of the Ancients by 30 seconds.\n Wrath of the Berserker by 30 seconds.",
+        "descriptionHtml": "<p>Reduce the cooldowns of your:<br></br><span class=\"tooltip-icon-bullet\"></span> Earthquake by <span class=\"d3-color-green\">15</span> seconds.<br></br><span class=\"tooltip-icon-bullet\"></span> Call of the Ancients by <span class=\"d3-color-green\">30</span> seconds.<br></br><span class=\"tooltip-icon-bullet\"></span> Wrath of the Berserker by <span class=\"d3-color-green\">30</span> seconds.</p>",
+        "flavorText": "The aid of the Immortal King shall come to those who have earned it."
+      },
+      {
+        "slug": "earthen-might",
+        "name": "Earthen Might",
+        "icon": "x1_barbarian_passive_earthenmight",
+        "level": 64,
+        "tooltipUrl": "/class/barbarian/passive/earthen-might",
+        "description": "Gain 30 Fury when Avalanche or Earthquake is triggered.",
+        "descriptionHtml": "<p>Gain <span class=\"d3-color-green\">30</span> Fury when Avalanche or Earthquake is triggered.</p>",
+        "flavorText": "\"My capital has become the cell in which I await my execution. The ground roars beneath me, announcing the presence of the wild men, as they rend and tear the foundations of the world and laugh. Oh, woe is me that I ever confused their savage ways for weakness.\"�Loren, Panep of Samauren"
+      },
+      {
+        "slug": "sword-and-board",
+        "name": "Sword and Board",
+        "icon": "x1_barbarian_passive_swordandboard",
+        "level": 66,
+        "tooltipUrl": "/class/barbarian/passive/sword-and-board",
+        "description": "While wielding a shield, reduce all damage taken by 30% and reduce Fury costs by 20%.",
+        "descriptionHtml": "<p>While wielding a shield, reduce all damage taken by <span class=\"d3-color-green\">30%</span> and reduce Fury costs by <span class=\"d3-color-green\">20%</span>.</p>",
+        "flavorText": "\"Turning away the attack of an enemy saps their resolve as surely as landing a blow of your own.\" �Battlemaster Kal-Jor"
+      },
+      {
+        "slug": "rampage",
+        "name": "Rampage",
+        "icon": "x1_barbarian_passive_rampage",
+        "level": 68,
+        "tooltipUrl": "/class/barbarian/passive/rampage",
+        "description": "Increase Strength by 1% for 8 seconds after killing or assisting in killing an enemy. This effect stacks up to 25 times.",
+        "descriptionHtml": "<p>Increase Strength by <span class=\"d3-color-green\">1%</span> for <span class=\"d3-color-green\">8</span> seconds after killing or assisting in killing an enemy. This effect stacks up to <span class=\"d3-color-green\">25</span> times.</p>",
+        "flavorText": "\"The battle was never ending, sapping our minds and bodies to the point of exhaustion. But they thrived amidst the carnage, every killing blow renewing their bloodlust. They couldn't be stopped.\" �Sergeant Peshkov on the Siege of the Barbarians, 1123 Anno Kehjistani"
+      }
+    ]
+  }
+}
+----------------------------------------

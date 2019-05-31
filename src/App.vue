@@ -1,31 +1,58 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <v-app>
+    <v-content class="bg">
+      <v-toolbar fixed dense color="#B90B0B">
+        <img
+          height="45px"
+          width="45px"
+          src="https://img.informer.com/icons_mac/png/128/428/428530.png"
+        />
+
+        <v-spacer></v-spacer>
+        <v-toolbar-items>
+          <v-menu offset-y>
+            <template v-slot:activator="{ on }">
+              <v-btn dark v-on="on" id="class">Classes</v-btn>
+            </template>
+            <v-card
+              dark
+              v-for="(name, i) in menu.names"
+              :key="i"
+              :to="'/' + menu.pages[i]"
+              >{{ name }}</v-card
+            >
+          </v-menu>
+          <v-btn dark v-on="on" to="/">News</v-btn>
+          <v-btn dark v-on="on" to="/extra">Extra</v-btn>
+        </v-toolbar-items>
+      </v-toolbar>
+    </v-content>
+    <router-view></router-view>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
+<script>
+export default {
+  name: "App",
+  components: {},
+  data() {
+    return {
+      mensaje: null,
+      mensajes: [],
+      menu: {
+        names: [
+          "Witch Doctor",
+          "Barbarian",
+          "Demon Hunter",
+          "Wizard",
+          "Necromancer",
+          "Monk",
+          "Crusader"
+        ],
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+        pages: ["wd", "barb", "dh", "wiz", "necro", "monk", "crus"]
+      }
+    };
+  }
+};
+</script>

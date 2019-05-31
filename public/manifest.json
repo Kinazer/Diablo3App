@@ -1,0 +1,25 @@
+{
+  "short_name": "diablo3guide",
+  "name": "Diablo 3 Guide",
+  "icons": [
+    {
+      "src": "d3l.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "d3l.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "d3l.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#000000",
+  "display": "fullscreen",
+  "theme_color": "#FFFFFF"
+}

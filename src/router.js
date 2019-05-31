@@ -5,7 +5,6 @@ import WD from "./views/WD.vue";
 import Extra from "./views/Extra.vue";
 import Chat from "./views/Chat.vue";
 import Armory from "./views/Armory.vue";
-import Ladder from "./views/Ladder.vue";
 
 Vue.use(Router);
 
@@ -18,11 +17,7 @@ export default new Router({
       name: "armory",
       component: Armory
     },
-    {
-      path: "/ladder",
-      name: "ladder",
-      component: Ladder
-    },
+
     {
       path: "/",
       name: "news",

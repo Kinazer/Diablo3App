@@ -3,30 +3,28 @@
     <v-layout mt-5>
       <v-flex class="loreText" m-2>
         <p>
-          Only a select few men and women among the umbaru tribes can ascend to
-          the hallowed role of witch doctor, for they must possess both a
-          history of battle and a talent for communing with spirits. The latter
-          ability belongs solely to those born with the touch of the Unformed
-          Land – the invisible realm where the umbaru believe the spirits of the
-          dead dwell once they have left Sanctuary behind.
+          The Priests of Rathma—also known as Necromancers—live and die
+          by a simple philosophy: that the eternal struggle between light
+          and darkness is never-ending, and that Sanctuary is threatened
+          by both sides of that war. Only by preserving the balance and
+          keeping those opposing forces at bay, one can hope to make the
+          world a better place.
         </p>
         <p>
-          When a man dies, witch doctors feel what they suspect is the breath of
-          life leaving his cooling body. And, when calamity or genocide sends
-          hundreds to their graves at once, witch doctors can sense their
-          trembling and shrieking from beyond.
+          Members of this order are unique , and often reviled for their
+          use of death magic. Though such power is often abused in
+          Sanctuary, the Priests of Rathma strive to use it to preserve
+          to the Balance they hold sacred.
         </p>
         <p>
-          Witch doctors cannot cover their ears to the voices of the spirits. As
-          the sounds of disquiet grow louder, their choice is made. They must
-          restore the balance between their world and the Unformed Land, or
-          watch the torment of generations past for the rest of their lives… and
-          forever after.
+          When they do venture out from their home deep within the jungles
+          of Kehjistan, roving Priests of Rathma do whatever it takes to
+          safeguard their world from ruin.
         </p>
       </v-flex>
 
       <v-layout row wrap>
-        <v-flex xs12>
+        <v-flex xs1 align-end>
           <v-dialog v-model="dialog">
             <template v-slot:activator="{ on }">
               <v-chip
@@ -47,7 +45,6 @@
                 {{ skill.level }} - {{ skill.name }}
               </v-chip>
             </template>
-            <!-- <span class="text-lg-right">{{skill.level}} - {{skill.name}}</span> -->
 
             <v-card v-for="(rune, i) in descri.runes" :key="i">
               <v-card-title>{{ rune.name }}</v-card-title>
@@ -67,16 +64,16 @@ export default {
   },
   methods: {
     description(skill) {
-      this.$store.dispatch("getSkillDesc", skill.slug);
+      this.$store.dispatch("getSkillDescNecro", skill.slug);
     }
   },
   created() {
-    this.$store.dispatch("getSkillType", this.id);
+    this.$store.dispatch("getSkillNecro", this.id);
   },
 
   computed: {
     skills() {
-      return this.$store.getters.getSkillTypeName;
+      return this.$store.getters.getSkillNecroName;
     },
     descri() {
       return this.$store.getters.getSkillDescName;

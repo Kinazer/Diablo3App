@@ -2,31 +2,13 @@
   <v-container text-xs-left class="bg">
     <v-layout mt-5>
       <v-flex class="loreText" m-2>
-        <p>
-          Only a select few men and women among the umbaru tribes can ascend to
-          the hallowed role of witch doctor, for they must possess both a
-          history of battle and a talent for communing with spirits. The latter
-          ability belongs solely to those born with the touch of the Unformed
-          Land – the invisible realm where the umbaru believe the spirits of the
-          dead dwell once they have left Sanctuary behind.
-        </p>
-        <p>
-          When a man dies, witch doctors feel what they suspect is the breath of
-          life leaving his cooling body. And, when calamity or genocide sends
-          hundreds to their graves at once, witch doctors can sense their
-          trembling and shrieking from beyond.
-        </p>
-        <p>
-          Witch doctors cannot cover their ears to the voices of the spirits. As
-          the sounds of disquiet grow louder, their choice is made. They must
-          restore the balance between their world and the Unformed Land, or
-          watch the torment of generations past for the rest of their lives… and
-          forever after.
-        </p>
+        <p>Magic-users hail from academies throughout Sanctuary – from Xiansai to Caldeum – bearing monikers like "sorcerer" and "mage," but those who would refer to themselves with the derogatory epithet "wizard" are as similar to their fellow spellcasters as a lion is to a kitten. Wizards and sorcerers both wield the hidden mysteries of the arcane; there, the commonalities end.</p>
+        <p>Wizards are known for a number of qualities: not only rebelliousness and flair, but also disdain for the endless lessons and prattling about caution and safety that echo from academic schools of magic. Wizards’ superior attitudes seem to stem from their natural talent – their ability to wrestle the ambient force of magic into submission and direct it to their ends by will and instinct. Any accidents that might occur due to their lack of finesse are unfortunate…but that rarely stops wizards from indulging in their unstable power.</p>
+        <p>If they can only master their double-edged gift and avoid destroying themselves, these upstart arcane prodigies may be able to finally reach the destiny that they see on the horizon.</p>
       </v-flex>
 
       <v-layout row wrap>
-        <v-flex xs12>
+        <v-flex xs1 align-end>
           <v-dialog v-model="dialog">
             <template v-slot:activator="{ on }">
               <v-chip
@@ -67,16 +49,16 @@ export default {
   },
   methods: {
     description(skill) {
-      this.$store.dispatch("getSkillDesc", skill.slug);
+      this.$store.dispatch("getSkillDescWiz", skill.slug);
     }
   },
   created() {
-    this.$store.dispatch("getSkillType", this.id);
+    this.$store.dispatch("getSkillWiz", this.id);
   },
 
   computed: {
     skills() {
-      return this.$store.getters.getSkillTypeName;
+      return this.$store.getters.getSkillWizName;
     },
     descri() {
       return this.$store.getters.getSkillDescName;

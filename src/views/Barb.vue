@@ -3,30 +3,30 @@
     <v-layout mt-5>
       <v-flex class="loreText" m-2>
         <p>
-          Only a select few men and women among the umbaru tribes can ascend to
-          the hallowed role of witch doctor, for they must possess both a
-          history of battle and a talent for communing with spirits. The latter
-          ability belongs solely to those born with the touch of the Unformed
-          Land – the invisible realm where the umbaru believe the spirits of the
-          dead dwell once they have left Sanctuary behind.
+          For ages, the barbarians dwelling in the shadow of Mount Arreat were
+          shaped to be as strong and unyielding as stone. Immense in size and
+          unmatched in ferocity, they were charged from birth with a duty passed
+          through generations: to protect the sacred mountain.
         </p>
         <p>
-          When a man dies, witch doctors feel what they suspect is the breath of
-          life leaving his cooling body. And, when calamity or genocide sends
-          hundreds to their graves at once, witch doctors can sense their
-          trembling and shrieking from beyond.
+          When their homeland was shattered, many barbarians lost faith.
+          They became aimless, haunted by their past, traveling from place
+          to place without honor or direction.
         </p>
         <p>
-          Witch doctors cannot cover their ears to the voices of the spirits. As
-          the sounds of disquiet grow louder, their choice is made. They must
-          restore the balance between their world and the Unformed Land, or
-          watch the torment of generations past for the rest of their lives… and
-          forever after.
+          But not all barbarians have given up their vigil. Some still honor the
+          snows of Arreat's summit and prowl the outskirts of its crater. They recall
+          being handed axes and spears at an age when city children were clinging to
+          their toys… and they burn with shame at the failure of their people.
+        </p>
+        <p>
+          These barbarians strive to find a new purpose for themselves in a changed
+          world, and they will crush any who stand in their way.
         </p>
       </v-flex>
 
       <v-layout row wrap>
-        <v-flex xs12>
+        <v-flex xs1 align-end>
           <v-dialog v-model="dialog">
             <template v-slot:activator="{ on }">
               <v-chip
@@ -67,16 +67,16 @@ export default {
   },
   methods: {
     description(skill) {
-      this.$store.dispatch("getSkillDesc", skill.slug);
+      this.$store.dispatch("getSkillDescBaba", skill.slug);
     }
   },
   created() {
-    this.$store.dispatch("getSkillType", this.id);
+    this.$store.dispatch("getSkillBarb", this.id);
   },
 
   computed: {
     skills() {
-      return this.$store.getters.getSkillTypeName;
+      return this.$store.getters.getSkillBarbName;
     },
     descri() {
       return this.$store.getters.getSkillDescName;

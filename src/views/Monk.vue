@@ -3,31 +3,34 @@
     <v-layout mt-5>
       <v-flex class="loreText" m-2>
         <p>
-          Only a select few men and women among the umbaru tribes can ascend to
-          the hallowed role of witch doctor, for they must possess both a
-          history of battle and a talent for communing with spirits. The latter
-          ability belongs solely to those born with the touch of the Unformed
-          Land – the invisible realm where the umbaru believe the spirits of the
-          dead dwell once they have left Sanctuary behind.
+          Monks of the Sahptev faith train their bodies and minds so
+          that they may become the foremost holy warriors of the land
+          of Ivgorod. Within the cloisters of the Patriarchs, the monks
+          endure harsh trials both physical and spiritual, proving their
+          devotion and attaining unmatched focus.
         </p>
         <p>
-          When a man dies, witch doctors feel what they suspect is the breath of
-          life leaving his cooling body. And, when calamity or genocide sends
-          hundreds to their graves at once, witch doctors can sense their
-          trembling and shrieking from beyond.
+          Daily ritualistic cleansings help monks purify their spirits
+          and overcome the corruption that gnaws at the hearts of all men.
+          In the pursuit of martial perfection, they also hone their legendary
+          balance and clarity, skills that allow them to master both unarmed
+          combat and a diverse array of weapons.
         </p>
         <p>
-          Witch doctors cannot cover their ears to the voices of the spirits. As
-          the sounds of disquiet grow louder, their choice is made. They must
-          restore the balance between their world and the Unformed Land, or
-          watch the torment of generations past for the rest of their lives… and
-          forever after.
+          After a lifetime of preparation, anointed monks are permitted to
+          leave their monasteries' halls to serve the decrees of the Patriarchs.
+          The emblem on their foreheads marks them as survivors, achievers,
+          and pillars of their society.
+        </p>
+        <p>
+          Monks embody the will of Ivgorod’s one thousand and one gods in every
+          step and every strike.
         </p>
       </v-flex>
 
       <v-layout row wrap>
-        <v-flex xs12>
-          <v-dialog v-model="dialog">
+        <v-flex xs1 align-end>
+          <v-dialog>
             <template v-slot:activator="{ on }">
               <v-chip
                 v-for="(skill, i) in skills.skills.active"
@@ -67,16 +70,16 @@ export default {
   },
   methods: {
     description(skill) {
-      this.$store.dispatch("getSkillDesc", skill.slug);
+      this.$store.dispatch("getSkillDescMonk", skill.slug);
     }
   },
   created() {
-    this.$store.dispatch("getSkillType", this.id);
+    this.$store.dispatch("getSkillMonk", this.id);
   },
 
   computed: {
     skills() {
-      return this.$store.getters.getSkillTypeName;
+      return this.$store.getters.getSkillMonkName;
     },
     descri() {
       return this.$store.getters.getSkillDescName;

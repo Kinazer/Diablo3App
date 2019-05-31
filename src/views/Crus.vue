@@ -3,30 +3,32 @@
     <v-layout mt-5>
       <v-flex class="loreText" m-2>
         <p>
-          Only a select few men and women among the umbaru tribes can ascend to
-          the hallowed role of witch doctor, for they must possess both a
-          history of battle and a talent for communing with spirits. The latter
-          ability belongs solely to those born with the touch of the Unformed
-          Land – the invisible realm where the umbaru believe the spirits of the
-          dead dwell once they have left Sanctuary behind.
+          The leaders of the harmonious Zakarum religion once strove to imprison
+          Mephisto, Lord of Hatred, beneath Travincal temple, preventing him from
+          ever twisting the hearts of humanity again.
+        </p>
+        <p>They failed.</p>
+        <p>
+          It was not the first time Zakarum had lapsed; 200 years prior, the
+          cleric Akkhan noticed corruption at the heart of his faith, and sent his
+          acolytes on a far-ranging quest to cleanse it. Akkhan’s “crusaders” were
+          young recruits, chosen for honor and goodness, trained in weaponry and
+          flesh-scouring magics, though their most important quality was unwavering
+          devotion to duty.
         </p>
         <p>
-          When a man dies, witch doctors feel what they suspect is the breath of
-          life leaving his cooling body. And, when calamity or genocide sends
-          hundreds to their graves at once, witch doctors can sense their
-          trembling and shrieking from beyond.
-        </p>
-        <p>
-          Witch doctors cannot cover their ears to the voices of the spirits. As
-          the sounds of disquiet grow louder, their choice is made. They must
-          restore the balance between their world and the Unformed Land, or
-          watch the torment of generations past for the rest of their lives… and
-          forever after.
+          Today, the crusaders’ focused quest for purity has broadened. Flimsy
+          “containment” gives evil many opportunities to thrive, and wandering
+          crusaders – often master and apprentice pairs – regularly strike down
+          Sanctuary’s demons. Some fight out of righteousness; others in the hopes
+          that their victories may make corrupt Zakarum whole again. When a crusader's
+          master dies, their student takes up their weapons and their identity…and the
+          crusade continues, even beyond death.
         </p>
       </v-flex>
 
       <v-layout row wrap>
-        <v-flex xs12>
+        <v-flex xs1 align-end>
           <v-dialog v-model="dialog">
             <template v-slot:activator="{ on }">
               <v-chip
@@ -67,16 +69,16 @@ export default {
   },
   methods: {
     description(skill) {
-      this.$store.dispatch("getSkillDesc", skill.slug);
+      this.$store.dispatch("getSkillDescCrus", skill.slug);
     }
   },
   created() {
-    this.$store.dispatch("getSkillType", this.id);
+    this.$store.dispatch("getSkillCrus", this.id);
   },
 
   computed: {
     skills() {
-      return this.$store.getters.getSkillTypeName;
+      return this.$store.getters.getSkillCrusName;
     },
     descri() {
       return this.$store.getters.getSkillDescName;

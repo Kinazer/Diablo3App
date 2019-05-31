@@ -2,31 +2,14 @@
   <v-container text-xs-left class="bg">
     <v-layout mt-5>
       <v-flex class="loreText" m-2>
-        <p>
-          Only a select few men and women among the umbaru tribes can ascend to
-          the hallowed role of witch doctor, for they must possess both a
-          history of battle and a talent for communing with spirits. The latter
-          ability belongs solely to those born with the touch of the Unformed
-          Land – the invisible realm where the umbaru believe the spirits of the
-          dead dwell once they have left Sanctuary behind.
-        </p>
-        <p>
-          When a man dies, witch doctors feel what they suspect is the breath of
-          life leaving his cooling body. And, when calamity or genocide sends
-          hundreds to their graves at once, witch doctors can sense their
-          trembling and shrieking from beyond.
-        </p>
-        <p>
-          Witch doctors cannot cover their ears to the voices of the spirits. As
-          the sounds of disquiet grow louder, their choice is made. They must
-          restore the balance between their world and the Unformed Land, or
-          watch the torment of generations past for the rest of their lives… and
-          forever after.
-        </p>
+        <p>Those who call themselves demon hunters are not a people or a nation. They owe allegiance to no king. They are but a remnant – an echo – of those who’ve lost their lives to hellspawn. When their homes are burnt and their families butchered by demons, most newly scarred refugees give up on living – but a few bury their dead, band together, and swear vengeance.</p>
+        <p>Though they are small in number, hunters track and corner demons in the hopes that, if they can save even one life, their world will be better for it. At the end of a day’s hunt, most still close their eyes and have nightmares in which they see the horrors that brought them together: gore-caked claws, and men and women drowning in their own blood.</p>
+        <p>Awake, demon hunters see much the same. But, now, in the present, they finally have the power to retaliate.</p>
+        <p>They dare not dream of victory, or, even less likely, peace. And yet, they hunt. They can do nothing else.</p>
       </v-flex>
 
       <v-layout row wrap>
-        <v-flex xs12>
+        <v-flex xs1 align-end>
           <v-dialog v-model="dialog">
             <template v-slot:activator="{ on }">
               <v-chip
@@ -67,16 +50,16 @@ export default {
   },
   methods: {
     description(skill) {
-      this.$store.dispatch("getSkillDesc", skill.slug);
+      this.$store.dispatch("getSkillDescDH", skill.slug);
     }
   },
   created() {
-    this.$store.dispatch("getSkillType", this.id);
+    this.$store.dispatch("getSkillDH", this.id);
   },
 
   computed: {
     skills() {
-      return this.$store.getters.getSkillTypeName;
+      return this.$store.getters.getSkillDHName;
     },
     descri() {
       return this.$store.getters.getSkillDescName;

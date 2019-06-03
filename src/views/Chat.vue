@@ -9,7 +9,7 @@
     <v-layout
       column
       align-center
-      style="margin-top:10%; margin-left:25px;margin-right:25px; overflow-y:scroll; border-radius: 15px; height:300px; color:black;  background-color: rgba(240, 255, 255, 0.603)"
+      style="margin-top:10%; margin-left:25px;margin-right:25px; overflow-y:scroll; scroll-behavior:smooth; border-radius: 15px; height:300px; color:black;  background-color: rgba(240, 255, 255, 0.603)"
     >
       <v-flex v-for="(mensaje, i) in mensajes" :key="i">
         <div

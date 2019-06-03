@@ -6,19 +6,19 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     url:
-      "https://us.api.blizzard.com/d3/data/hero/witch-doctor?locale=en_US&access_token=US6aNqaBDuFr0bsPxKdCgl83RJyiSROhnW",
+      "https://us.api.blizzard.com/d3/data/hero/witch-doctor?locale=en_US&access_token=US8dL3jb91ddgzzvJu88L0TvZxr5Ck2MMX",
     urlBarb:
-      "https://us.api.blizzard.com/d3/data/hero/barbarian?locale=en_US&access_token=US6aNqaBDuFr0bsPxKdCgl83RJyiSROhnW",
+      "https://us.api.blizzard.com/d3/data/hero/barbarian?locale=en_US&access_token=US8dL3jb91ddgzzvJu88L0TvZxr5Ck2MMX",
     urlNecro:
-      "https://us.api.blizzard.com/d3/data/hero/necromancer?locale=en_US&access_token=US6aNqaBDuFr0bsPxKdCgl83RJyiSROhnW",
+      "https://us.api.blizzard.com/d3/data/hero/necromancer?locale=en_US&access_token=US8dL3jb91ddgzzvJu88L0TvZxr5Ck2MMX",
     urlMonk:
-      "https://us.api.blizzard.com/d3/data/hero/monk?locale=en_US&access_token=US6aNqaBDuFr0bsPxKdCgl83RJyiSROhnW",
+      "https://us.api.blizzard.com/d3/data/hero/monk?locale=en_US&access_token=US8dL3jb91ddgzzvJu88L0TvZxr5Ck2MMX",
     urlCrus:
-      "https://us.api.blizzard.com/d3/data/hero/crusader?locale=en_US&access_token=US6aNqaBDuFr0bsPxKdCgl83RJyiSROhnW",
+      "https://us.api.blizzard.com/d3/data/hero/crusader?locale=en_US&access_token=US8dL3jb91ddgzzvJu88L0TvZxr5Ck2MMX",
     urlDH:
-      "https://us.api.blizzard.com/d3/data/hero/demon-hunter?locale=en_US&access_token=US6aNqaBDuFr0bsPxKdCgl83RJyiSROhnW",
+      "https://us.api.blizzard.com/d3/data/hero/demon-hunter?locale=en_US&access_token=US8dL3jb91ddgzzvJu88L0TvZxr5Ck2MMX",
     urlWiz:
-      "https://us.api.blizzard.com/d3/data/hero/wizard?locale=en_US&access_token=US6aNqaBDuFr0bsPxKdCgl83RJyiSROhnW",
+      "https://us.api.blizzard.com/d3/data/hero/wizard?locale=en_US&access_token=US8dL3jb91ddgzzvJu88L0TvZxr5Ck2MMX",
 
     urlSkill1: "https://us.api.blizzard.com/d3/data/hero/witch-doctor/skill/",
     urlSkill1baba: "https://us.api.blizzard.com/d3/data/hero/barbarian/skill/",
@@ -29,7 +29,7 @@ export default new Vuex.Store({
     urlSkill1dh: "https://us.api.blizzard.com/d3/data/hero/demon-hunter/skill/",
     urlSkill1wiz: "https://us.api.blizzard.com/d3/data/hero/wizard/skill/",
 
-    urlSkill2: "?locale=en_US&access_token=US6aNqaBDuFr0bsPxKdCgl83RJyiSROhnW",
+    urlSkill2: "?locale=en_US&access_token=US8dL3jb91ddgzzvJu88L0TvZxr5Ck2MMX",
     skillType: [],
     skillDesc: []
   },

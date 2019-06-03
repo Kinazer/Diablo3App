@@ -7,13 +7,18 @@
       >Take part on a real-time group chat and talk about your own experience on the game</p>
     </v-layout>
     <v-layout
-      column
       align-center
-      style="margin-top:10%; margin-left:25px;margin-right:25px; overflow-y:scroll; scroll-behavior:smooth; border-radius: 15px; height:300px; color:black;  background-color: rgba(240, 255, 255, 0.603)"
+      style="margin-top:10%; margin-left:25px;margin-right:25px;  display: block;
+  width: 350px;
+  height: 200px;
+  
+  overflow-y: scroll;
+  scroll-behavior: auto ; border-radius: 15px; color:black;  background-color: rgba(240, 255, 255, 0.603)"
     >
       <v-flex v-for="(mensaje, i) in mensajes" :key="i">
         <div
-          style="background-color: rgb(112, 255, 77); min-width:200px; text-align:center; margin:2px; border-radius:5px"
+          style="background-color: rgb(112, 255, 77);  text-align:center; margin:2px;    max-width: 170px; border-radius:5px"
+          v-if="mensaje !=null"
         >{{ mensaje.mensaje }}</div>
       </v-flex>
     </v-layout>
@@ -70,13 +75,6 @@ export default {
   },
   created() {
     this.fetchMessages();
-    Firebase.auth().onAuthStateChanged(function(user) {
-      if (user) {
-        this.log = true;
-      } else {
-        this.log = false;
-      }
-    });
   }
 };
 </script>

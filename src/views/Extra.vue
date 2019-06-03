@@ -5,7 +5,7 @@
         <router-link to="/chat">
           <v-layout class="bg1" justify-center>CHAT</v-layout>
         </router-link>
-        <router-link to="/lad">
+        <router-link to="/ladder">
           <v-layout class="bg2" justify-center>LADDER</v-layout>
         </router-link>
         <router-link to="/armory">
